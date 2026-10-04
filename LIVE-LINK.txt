@@ -1,3 +1,5 @@
-Live deployment: Pending
+Live deployment: Active
 Hosting: Render
-URL: Not assigned yet - Render assigns the public URL after the Blueprint is deployed.
+URL: https://creatoros-ai-fullstack.onrender.com
+Health check: https://creatoros-ai-fullstack.onrender.com/api/health
+Verified: 2026-10-04 - frontend HTTP 200, API health ok=true, KRYNX admin login and protected admin overview successful.
