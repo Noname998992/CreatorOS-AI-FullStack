@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: creatoros-ai-fullstack
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run install:all && npm --prefix client run build
+    startCommand: npm --prefix server start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        sync: false
